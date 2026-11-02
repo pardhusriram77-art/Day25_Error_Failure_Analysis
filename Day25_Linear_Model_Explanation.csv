@@ -1,0 +1,2 @@
+feature,coefficient,intercept,imputer_median,interpretation
+current_ph,0.010010924654808899,6.998942186798382,7.041665417411175,"For a one-unit increase in current pH, predicted next-row pH changes by coefficient units, within this fitted linear relationship."

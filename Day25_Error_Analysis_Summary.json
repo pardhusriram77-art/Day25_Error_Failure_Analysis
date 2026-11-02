@@ -1,0 +1,25 @@
+{
+  "test_rows": 416,
+  "MAE": 1.4815340200912186,
+  "RMSE": 1.9004687789585788,
+  "mean_residual_actual_minus_pred": 0.037280837595590456,
+  "median_absolute_error": 1.223440944926796,
+  "max_absolute_error": 7.069435768736458,
+  "min_absolute_error": 0.01188312312249895,
+  "underprediction_rows": 205,
+  "overprediction_rows": 211,
+  "model_beats_constant_mean_rows": 221,
+  "model_beats_constant_mean_percent": 53.125,
+  "linear_coefficient": 0.010010924654808899,
+  "intercept": 6.998942186798382,
+  "imputer_median": 7.041665417411175,
+  "limitations": [
+    "Source water-potability dataset is static; timestamps were synthetically generated.",
+    "Next-row pH is a pseudo-temporal target, not a measured future underwater observation.",
+    "The input model uses only current-row pH; it cannot represent interactions with other water-quality variables.",
+    "No dissolved oxygen or pressure columns are available in the source data.",
+    "No labelled anomaly ground truth exists; this analysis is forecasting error analysis, not anomaly detection evaluation.",
+    "The pH range buckets are descriptive groupings, not regulatory or safety thresholds.",
+    "Worst individual rows identify where this fitted model struggled; they do not establish physical causes."
+  ]
+}
